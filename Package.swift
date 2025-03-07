@@ -16,7 +16,7 @@ let package = Package(name: "RxRealm",
                       dependencies: [
                         // Dependencies declare other packages that this package depends on.
                         .package(url: "https://github.com/realm/realm-swift.git", .upToNextMajor(from: "10.21.1")),
-                        // .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMajor(from: "6.9.0"))
+                        .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMajor(from: "6.9.0"))
                       ],
 
                       targets: [
