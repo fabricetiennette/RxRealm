@@ -24,18 +24,18 @@ let package = Package(name: "RxRealm",
                         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
                         .target(name: "RxRealm",
                                 dependencies: [
-                                  .product(name: "RxSwift", package: "RxSwift"),
-                                  .product(name: "RealmSwift", package: "Realm"),
-                                  .product(name: "RxCocoa", package: "RxSwift")
+                                  // .product(name: "RxSwift", package: "RxSwift"),
+                                  // .product(name: "RealmSwift", package: "Realm"),
+                                  // .product(name: "RxCocoa", package: "RxSwift")
                                 ],
                                 path: "Sources"),
                         .testTarget(name: "RxRealmTests",
                                     dependencies: [
-                                      .byName(name: "RxRealm"),
-                                      .product(name: "RxSwift", package: "RxSwift"),
-                                      .product(name: "RxBlocking", package: "RxSwift"),
-                                      .product(name: "RealmSwift", package: "Realm"),
-                                      .product(name: "RxCocoa", package: "RxSwift")
+                                      // .byName(name: "RxRealm"),
+                                      // .product(name: "RxSwift", package: "RxSwift"),
+                                      // .product(name: "RxBlocking", package: "RxSwift"),
+                                      // .product(name: "RealmSwift", package: "Realm"),
+                                      // .product(name: "RxCocoa", package: "RxSwift")
                                     ])
                       ],
                       swiftLanguageVersions: [.v5])
