@@ -15,7 +15,7 @@ let package = Package(name: "RxRealm",
 
                       dependencies: [
                         // Dependencies declare other packages that this package depends on.
-                        // .package(url: "https://github.com/realm/realm-swift.git", .upToNextMajor(from: "10.21.1")),
+                        .package(url: "https://github.com/realm/realm-swift.git", .upToNextMajor(from: "10.21.1")),
                         // .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMajor(from: "6.5.0"))
                       ],
 
@@ -25,16 +25,16 @@ let package = Package(name: "RxRealm",
                         .target(name: "RxRealm",
                                 dependencies: [
                                   // .product(name: "RxSwift", package: "RxSwift"),
-                                  // .product(name: "RealmSwift", package: "Realm"),
+                                  .product(name: "RealmSwift", package: "Realm"),
                                   // .product(name: "RxCocoa", package: "RxSwift")
                                 ],
                                 path: "Sources"),
                         .testTarget(name: "RxRealmTests",
                                     dependencies: [
-                                      // .byName(name: "RxRealm"),
+                                      .byName(name: "RxRealm"),
                                       // .product(name: "RxSwift", package: "RxSwift"),
                                       // .product(name: "RxBlocking", package: "RxSwift"),
-                                      // .product(name: "RealmSwift", package: "Realm"),
+                                      .product(name: "RealmSwift", package: "Realm"),
                                       // .product(name: "RxCocoa", package: "RxSwift")
                                     ])
                       ],
